@@ -1,4 +1,3 @@
-// components/Header.tsx
 import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronDown } from 'lucide-react';
@@ -7,8 +6,8 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-[#2B63D9] py-4">
       <div className="container mx-auto flex h-12 items-center px-6">
-        {/* Logo with reduced right margin */}
-        <Link href="/" className="flex items-center mr-8"> {/* Reduced from mr-10 */}
+        {/*right margin */}
+        <Link href="/" className="flex items-center mr-8">
           <div className="relative h-8 w-32">
             <Image
               src="/images/Lookscout.png"
@@ -20,8 +19,8 @@ const Header = () => {
           </div>
         </Link>
 
-        {/* Navigation moved closer */}
-        <nav className="hidden md:flex items-center space-x-7 ml-3"> {/* Reduced space between items and left margin */}
+        {/* Navigation*/}
+        <nav className="hidden md:flex items-center space-x-7 ml-3">
           <Link href="/" className="text-sm font-medium text-white hover:text-gray-200 transition-colors">
             Home
           </Link>
@@ -39,7 +38,7 @@ const Header = () => {
           </Link>
         </nav>
 
-        {/* Auth Buttons pushed to right */}
+        {/* Auth Buttons*/}
         <div className="flex items-center space-x-4 ml-auto">
           <Link 
             href="/login" 

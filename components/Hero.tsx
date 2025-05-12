@@ -1,5 +1,3 @@
-'use client'
-
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -34,7 +32,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right Side Visual */}
+        {/* Right Side */}
         <div className="w-full md:w-[30%] mt-12 md:mt-0">
           <Image
             src="/images/hero-pattern.png"

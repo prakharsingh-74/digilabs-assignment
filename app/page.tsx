@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Image from "next/image";
 import { FeaturesSection } from "@/components/Features";
+import Product from "@/components/Product"
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       <Header />
       <Hero />
       <FeaturesSection/>
+      <Product/>
     </>
   );
 }
